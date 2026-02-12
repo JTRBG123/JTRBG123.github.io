@@ -63,6 +63,9 @@ function gradeQuiz() {
     let q1UserAnswer = document.querySelector("input[name='q1']:checked").value;
     let q2UserAnswer = document.getElementById("quiz-answer").value;
     let q3UserAnswer = document.getElementById("pkmnType").value;
-    alert("Your answer to question 1 is: " + q1UserAnswer + "\nYour answer to question 2 is: " + q2UserAnswer + "\nYour answer to question 3 is: " + q3UserAnswer);
-
+    let q4UserAnswer = document.getElementById("textSize").value;
+    alert("Your answer to question 1 is: " + q1UserAnswer + 
+        "\nYour answer to question 2 is: " + q2UserAnswer + 
+        "\nYour answer to question 3 is: " + q3UserAnswer +
+        "\nYour answer to question 4 is: " + q4UserAnswer);
 }
