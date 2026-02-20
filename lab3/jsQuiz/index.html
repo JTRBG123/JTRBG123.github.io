@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Quiz Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="quiz-wrapper">
+    <header class="quiz-header">
+      <h1>JavaScript Quiz</h1>
+      <p class="subtitle">Answer all five questions and check your score.</p>
+      <p class="attempts">Total Times Quiz Was Taken: <span id="attemptCount">0</span></p>
+    </header>
+
+    <form id="quizForm" novalidate>
+      <section class="question-card" id="question1">
+        <h2>1) Fill in the blank</h2>
+        <p>What keyword is used to declare a constant in JavaScript?</p>
+        <label for="q1Input">Your answer:</label>
+        <input id="q1Input" name="q1" type="text" autocomplete="off">
+        <div class="feedback" id="feedback1" aria-live="polite"></div>
+      </section>
+
+      <section class="question-card" id="question2">
+        <h2>2) Radio buttons (random order)</h2>
+        <p>Which method converts a JSON string into a JavaScript object?</p>
+        <div id="q2Options" class="option-group" role="radiogroup" aria-label="JSON parse method options"></div>
+        <div class="feedback" id="feedback2" aria-live="polite"></div>
+      </section>
+
+      <section class="question-card" id="question3">
+        <h2>3) Checkboxes</h2>
+        <p>Select <strong>all</strong> primitive data types in JavaScript.</p>
+        <div class="option-group">
+          <input type="checkbox" id="q3a" name="q3" value="string">
+          <label for="q3a">string</label>
+
+          <input type="checkbox" id="q3b" name="q3" value="object">
+          <label for="q3b">object</label>
+
+          <input type="checkbox" id="q3c" name="q3" value="boolean">
+          <label for="q3c">boolean</label>
+
+          <input type="checkbox" id="q3d" name="q3" value="undefined">
+          <label for="q3d">undefined</label>
+        </div>
+        <div class="feedback" id="feedback3" aria-live="polite"></div>
+      </section>
+
+      <section class="question-card" id="question4">
+        <h2>4) Select menu</h2>
+        <label for="q4Select">Which operator checks both value and type equality?</label>
+        <select id="q4Select" name="q4">
+          <option value="">-- Choose one --</option>
+          <option value="==">==</option>
+          <option value="===">===</option>
+          <option value="=">=</option>
+          <option value="!=">!=</option>
+        </select>
+        <div class="feedback" id="feedback4" aria-live="polite"></div>
+      </section>
+
+      <section class="question-card" id="question5">
+        <h2>5) Number input</h2>
+        <label for="q5Input">How many values does a boolean type have?</label>
+        <input id="q5Input" name="q5" type="number" min="0" max="10" step="1">
+        <div class="feedback" id="feedback5" aria-live="polite"></div>
+      </section>
+
+      <div class="actions">
+        <button type="submit" id="submitBtn">Grade Quiz</button>
+        <button type="reset" id="resetBtn">Reset</button>
+      </div>
+    </form>
+
+    <section class="results" aria-live="polite">
+      <h2>Total Score: <span id="totalScore">0</span>/100</h2>
+      <p id="message"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
