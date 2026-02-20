@@ -1,0 +1,77 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ecfeff;
+	color: #111827;
+}
+
+main {
+	width: 100%;
+	max-width: 640px;
+	background: #ffffff;
+	border: 2px solid #0f172a;
+	border-radius: 14px;
+	padding: 24px;
+	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+h1 {
+	margin-top: 0;
+	margin-bottom: 8px;
+	font-size: 2rem;
+	letter-spacing: 0.06em;
+}
+
+#wordDisplay {
+	font-size: 2rem;
+	font-weight: 700;
+	letter-spacing: 0.2em;
+	margin: 10px 0 14px;
+}
+
+#hangmanImage {
+	display: block;
+	margin: 12px auto;
+	border: 2px solid #cbd5e1;
+	border-radius: 12px;
+	background: #f8fafc;
+}
+
+section {
+	margin: 12px 0;
+}
+
+#message {
+	min-height: 24px;
+	font-weight: 600;
+}
+
+input {
+	width: 48px;
+	padding: 8px;
+	font-size: 1.1rem;
+	text-align: center;
+	border: 1px solid #94a3b8;
+	border-radius: 8px;
+	outline: none;
+}
+
+button {
+	margin-left: 8px;
+	padding: 8px 14px;
+	font-size: 0.95rem;
+	border: 1px solid #0f172a;
+	border-radius: 8px;
+	background: #e2e8f0;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #cbd5e1;
+}
