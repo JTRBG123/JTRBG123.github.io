@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hangman Game</title>
+</head>
+<body>
+	<main>
+		<h1>Hangman</h1>
+		<p>Guess the hidden word one letter at a time.</p>
+
+		<section>
+			<h2>Word</h2>
+			<p id="wordDisplay">_ _ _ _</p>
+		</section>
+
+		<section>
+			<p>Wrong guesses: <span id="wrongLetters">None</span></p>
+			<p>Guesses left: <span id="guessesLeft">6</span></p>
+			<p id="message"></p>
+		</section>
+
+		<section>
+			<label for="letterInput">Enter a letter:</label>
+			<input id="letterInput" type="text" maxlength="1" autocomplete="off">
+			<button id="guessButton">Guess</button>
+			<button id="newGameButton">New Game</button>
+		</section>
+	</main>
+
+	<script src="js/scripts.js"></script>
+</body>
+</html>
