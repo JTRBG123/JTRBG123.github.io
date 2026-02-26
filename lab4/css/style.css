@@ -1,0 +1,87 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8f9fa, #e9f2ff);
+}
+
+.signup-card {
+    border: 0;
+    border-radius: 14px;
+}
+
+.card-body {
+    background-color: #ffffff;
+    border-radius: 14px;
+}
+
+h1 {
+    color: #0d6efd;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #334155;
+}
+
+.form-control,
+.form-select {
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    padding: 0.6rem 0.75rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.2);
+}
+
+.info-value {
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 0.55rem 0.75rem;
+    background-color: #f8fafc;
+    color: #1f2937;
+    font-weight: 500;
+}
+
+.message {
+    min-height: 20px;
+    margin-top: 0.35rem;
+}
+
+.message.ok {
+    color: #198754;
+}
+
+.message.error {
+    color: #dc3545;
+}
+
+.message.neutral {
+    color: #0d6efd;
+}
+
+#submitMessage {
+    padding: 0.25rem 0;
+}
+
+.btn-primary {
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 0.7rem 1rem;
+}
+
+.btn-primary:hover {
+    filter: brightness(0.96);
+}
+
+@media (max-width: 576px) {
+    .card-body {
+        padding: 1.25rem;
+    }
+}
