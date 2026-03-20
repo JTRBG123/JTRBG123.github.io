@@ -24,6 +24,7 @@ const fallbackSolarImages = [
 const studentName = process.env.STUDENT_NAME || 'Joseph R';
 const pixabayApiKey = process.env.PIXABAY_API_KEY;
 const nasaApiKey = process.env.NASA_API_KEY || 'DEMO_KEY';
+const port = process.env.PORT || 3000;
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
@@ -107,7 +108,7 @@ app.get('/nasaPod', async (req, res) => {
 });
 
 
-app.listen(3000, () => {
-   console.log('server started');
+app.listen(port, () => {
+   console.log(`server started on port ${port}`);
 });
 
